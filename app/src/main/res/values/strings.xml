@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Stopwatch</string>
+    <string name="defualtTimeLabel">00:00:00</string>
+    <string name="startButton">Start</string>
+    <string name="lapButton">Lap</string>
+    <string name="stopButton">Stop</string>
+    <string name="resetButton">Reset</string>
+</resources>
