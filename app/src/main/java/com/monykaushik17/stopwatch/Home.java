@@ -42,14 +42,17 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.button_lap).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                LaptimesContainer.lapTimesArrayList.add(getTime(counter));
+                arrayAdapter.notifyDataSetChanged();
+            }
+        });
+
     }
 
 
-    public void onClickLap(View view){
-        LaptimesContainer.lapTimesArrayList.add(getTime(counter));
-        arrayAdapter.notifyDataSetChanged();
-
-    }
 
     public void runner(){
         final TextView timeView = (TextView) findViewById(R.id.timeText);
